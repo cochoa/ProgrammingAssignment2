@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Function that calculates cached inverse matrix
 
 cacheSolve <- function(x, ...) {
-    ## Return a matrix that is the inverse of 'x'
+    ## Inverse of matrix x, only if it is not in cahce
     i <- x$getinverse()
     if(!is.null(i)) {
         message("getting cached inverse")
